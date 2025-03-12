@@ -1,0 +1,17 @@
+{
+  "name": "example-playwright-a11y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "playwright.config.ts",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@types/node": "^22.13.10"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.1"
+  }
+}
