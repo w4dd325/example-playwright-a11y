@@ -20,9 +20,9 @@ More info: https://www.npmjs.com/package/axe-html-reporter
 ---
 
 ### Basic script
-Navigate to a page 
-Wait for the page elements to load.
-Trigger the axe-core a11y check.
+Navigate to a page  
+Wait for the page elements to load.  
+Trigger the axe-core a11y check.  
 Then assert to ensure there are no violations listed.
 
 Note: The assertion is there to make the test fail if any violations are found.
