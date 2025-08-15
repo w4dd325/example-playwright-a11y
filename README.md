@@ -49,3 +49,13 @@ Available rules to test against.
 | 'wcag21aaa' | Run only WCAG 2.1 AAA rules |
 | 'wcag22a'   | Run only WCAG 2.2 A rules   |
 | 'wcag22aa'  | Run only WCAG 2.2 AA rules  |
+
+To ensure full covereage you should include all rule-sets 'upto' the one to want to validate against.
+
+For example:
+```.withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22a', 'wcag22aa'])```
+
+### Run the test
+Assuming you have cloned the repo and run ```npm i``` to install all dependencies etc. you can trigger the test run using:
+
+```npx playwright test```
