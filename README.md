@@ -14,26 +14,13 @@ More info: https://www.npmjs.com/package/@axe-core/playwright
 
 ---
 
-### Setup a basic script
-Navigate to a page and trigger the axe-core a11y check.
+### Basic script
+Navigate to a page 
+Wait for the page elements to load.
+Trigger the axe-core a11y check.
 Then assert to ensure there are no violations listed.
 
-```TypeScript
-import { test, expect } from '@playwright/test';
-import { AxeBuilder } from '@axe-core/playwright';
-
-test('Check accessibility violations (WCAG 2.2 AA)', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  const results = await new AxeBuilder({ page })
-  .withTags(['wcag22aa']) // Run only WCAG 2.2 AA rules
-  .analyze();
-
-  console.log(results);
-
-  expect(results.violations).toEqual([]);
-});
-```
+Note: The assertion is there to make the test fail if any violations are found.
 
 ---
 
