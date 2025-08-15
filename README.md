@@ -51,3 +51,7 @@ For example:
 Assuming you have cloned the repo and run ```npm i``` to install all dependencies etc. you can trigger the test run using:
 
 ```npx playwright test```
+
+### HTML Report
+The report is automatically generated and will look like this:
+![Image showing the HTML report created by Axe HTML Reporter](html-report-image.png)
